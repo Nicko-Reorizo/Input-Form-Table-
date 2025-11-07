@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="fnc.js"></script>
+    <script src="jquery-min.js"></script>
+</head>
+
+<body>
+    <div class="MainContainer">
+
+        <form onsubmit="Method(); return false;" id="myForm">
+            <div class="Section">
+
+                <h1 class="title">Loaning Registration Form</h1>
+
+                <label for="Name">Complete Name</label>
+                <input type="text" name="Name" id="txtCompleteName" required>
+                <label for="Address">Complete Address</label>
+                <input type="text" name="Address" id="txtCompleteAddress" required>
+
+                <label for="dtAmount">Loan Amount</label>
+                <input list="amount" required type="number" id="dtAmount">
+                <datalist id="amount">
+              <option value="1000">
+              <option value="5000">
+              <option value="10000">
+              <option value="20000">
+              <option></option>
+            </datalist>
+
+                <label for="date">Date</label>
+                <input type="date" required id="Date">
+
+                <label for="selTerm">Loan Term</label>
+                <select id="selTerm" required>
+           <option>1 Month</option>
+           <option>2 Months</option>
+           <option>3 Months</option>
+           <option>4 Months</option>
+           <option>5 Months</option>
+       </select>
+
+                <div style="display: inline-block;width: 48%; text-align: center;">
+                    <input type="checkbox" required id="chkAgreement">
+                    <label>I will Pay on time and when i fail to do so, i will pay extra fee's</label>
+                </div>
+
+                <div style="display: inline-block;width: 48%; text-align: center;">
+                    <label>Repayment Option</label>
+                    <input type="radio" name="repayment" required id="radCash">
+                    <label for="radio">Cash</label>
+                    <input type="radio" name="repayment" required id="radBank">
+                    <label for="radio">Bank Account</label>
+                </div>
+
+                <input type="submit" style="background-color: rgb(24,188,124);color: black;border-color:  rgb(24,188,124);" value="submit" id="submit">
+                <input type="reset" style="background-color: rgb(24,188,124);color: black;border-color:  rgb(24,188,124);">
+
+            </div>
+
+        </form>
+    </div>
+    <div class="TableContainer">
+        <table id="table">
+            <tr>
+                <th>COMPLETE NAME</th>
+                <th>COMPLETE ADDRESS</th>
+                <th>LOAN AMMOUNT</th>
+                <th>DATE OF LOAN</th>
+                <th>LOAN TERM</th>
+                <th>AGREEMENT</th>
+                <th>MODE OF PAYMENT</th>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+</body>
+
+</html>

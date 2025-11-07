@@ -1,0 +1,96 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title {
+    color: rgb(24, 188, 124);
+    text-shadow: 0 1px 10px rgb(70, 110, 70);
+}
+
+.MainContainer .Section {
+    background: rgba(0, 0, 0, 0.599);
+    padding: 40px;
+    backdrop-filter: blur(15px);
+    color: rgb(24, 188, 124);
+    border-radius: 30px;
+    width: 60%;
+}
+
+.MainContainer {
+    width: 29%;
+    display: inline-block;
+    left: 0%;
+    position: relative;
+}
+
+input,
+button {
+    height: 50px;
+    border-radius: 8px;
+    border-color: white;
+    background-color: transparent;
+    color: rgb(24, 188, 124);
+    margin-bottom: 15px;
+}
+
+.Section {
+    background-color: white;
+    display: inline-block;
+}
+
+input,
+label {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+}
+
+label {
+    letter-spacing: 2px;
+}
+
+.TableContainer {
+    display: inline-block;
+    margin-bottom: 800px;
+    color: rgb(24, 188, 124);
+    width: 60%;
+}
+
+table {
+    border-collapse: collapse;
+    border: 3px solid rgb(24, 188, 124);
+    background: rgba(0, 0, 0, 0.599);
+    backdrop-filter: blur(15px);
+    width: 100%;
+}
+
+#selTerm {
+    color: rgb(24, 188, 124);
+    background-color: transparent;
+    width: 100%;
+    height: 35px;
+    font-size: 25px;
+}
+
+th {
+    padding: 10px;
+}
+
+th,
+tr,
+td,
+table {
+    border: 1px solid rgb(24, 188, 124);
+    text-align: center;
+}
+
+tr:hover {
+    background-color: rgba(24, 188, 125, 0.247);
+}
